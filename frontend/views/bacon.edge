@@ -1,6 +1,11 @@
 @layout('layouts/main')
 @set('title', 'Bacon factory')
 
+@section('assets')
+  @entryPointStyles('bacon')
+  @entryPointScripts('bacon')
+@endsection
+
 @section('body')
   @!component('snowdog/bacon', {
     img: '/images/bacon.jpg'

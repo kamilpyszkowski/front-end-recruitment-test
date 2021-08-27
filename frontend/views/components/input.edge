@@ -1,0 +1,31 @@
+@if(items) 
+    <div class="input input--select">
+@else 
+    <div class="input">
+@endif
+    @if(items)
+        <span class='input__select-arrow'></span>
+        <select 
+            name={{name}}
+            id={{name}}
+            class='input__box'
+        >
+            @each(item in items)
+                <option>{{item}}</option>
+            @endeach
+        </select>
+    @else
+        <input 
+            class='input__box'
+            name={{name}}
+            id={{name}}
+            placeholder={{placeholder}}
+        />
+    @endif
+    <label 
+        class='input__label'
+        for={{name}}
+    >
+        {{label}}
+    </label>
+</div>

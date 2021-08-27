@@ -1,0 +1,39 @@
+main {
+    max-width: 100%;
+    padding: 2vh 4vw;
+    height: auto;
+}
+
+section {
+    &:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@keyframes baconAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+$baconMargin: 20px;
+$baconWidth: calc((100% / 3) - #{$baconMargin});
+
+img {
+    flex-basis: $baconWidth;
+    width: $baconWidth;
+    transition: transform ease-in-out .5s;
+    animation: baconAnimation .5s ease-in-out;
+    margin: 0 $baconMargin $baconMargin 0;
+
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+}

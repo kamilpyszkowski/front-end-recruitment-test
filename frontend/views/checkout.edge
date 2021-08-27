@@ -1,0 +1,119 @@
+@layout('layouts/main')
+@set('title', 'Checkout form')
+
+@section('assets')
+  @entryPointStyles('checkout')
+  @entryPointScripts('checkout')
+@endsection
+
+@section('body')
+    <div class='container'>
+        <form class='form' id='checkoutForm'>
+            <fieldset class='form__section'>
+                <legend class='form__heading'>Personal information</legend>
+                <section class='form__body'>
+                    @!component('components/input', {
+                    name: 'firstName',
+                    label: 'First name',
+                    placeholder: 'Elon'
+                })
+                @!component('components/input', {
+                    name: 'lastName',
+                    label: 'Last name',
+                    placeholder: 'Musk'
+                })
+                @!component('components/input', {
+                    name: 'email',
+                    label: 'Email',
+                    placeholder: 'elon@spacex.com'
+                })
+                @!component('components/input', {
+                    name: 'country',
+                    label: 'Contry',
+                    placeholder: 'United States',
+                    items: [
+                        'United States',
+                        'Poland',
+                        'San Escobar'
+                    ]
+                })
+                @!component('components/input', {
+                    name: 'postalCode',
+                    label: 'Postal Code',
+                    placeholder: '10001'
+                })
+                @!component('components/input', {
+                    name: 'phone',
+                    label: 'Phone Number',
+                    placeholder: '(212)\u00a0692-93-92'
+                })
+                </section>
+            </fieldset>
+            <fieldset class='form__section'>
+                <legend class='form__heading form__heading--secure'>Payment details</legend>
+                <section class='form__body form__body--reversed-width'>
+                    @!component('components/input', {
+                        name: 'creditCard',
+                        label: 'Credit Card Number',
+                        placeholder: '0000-0000-0000-0000'
+                    })
+                    @!component('components/input', {
+                        name: 'CVV',
+                        label: 'Security code',
+                        placeholder: '***'
+                    })
+                    @!component('components/input', {
+                        name: 'expDate',
+                        label: 'Expiration date',
+                        placeholder: 'MM\u00a0\u2215\u00a0YY'
+                    })
+                </section>
+            </fieldset>
+            <button class='button button--green button--cart-icon' id='submitButton' disabled>Complete purchase</button>
+            <ul class='errorTooltip'></ul>
+        </form>
+        <aside class='summary'>
+            <section class='summary__wrapper'>
+                <table class='summary__table'>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Your order</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @each(item in state.cart.items)
+                            <tr>
+                                <td>{{item.name}}</td>
+                                <td>{{item.price}}</td>
+                            </tr>
+                        @endeach
+                        <tr>
+                            <td colspan="2">
+                                <hr />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Total purchases</td>
+                            <td>{{cart.totals.subTotal}}</td>
+                        </tr>
+                        <tr>
+                            <td>Estimated tax</td>
+                            <td>{{cart.totals.tax}}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <hr />
+                            </td>
+                        </tr>
+                        <tfoot>
+                            <tr>
+                                <td>Total</td>
+                                <td>{{cart.totals.grandTotal}}</td>
+                            </tr>
+                        </tfoot>
+                    </tbody>
+                </table>
+            </section>
+        </aside>
+    </div>
+@end

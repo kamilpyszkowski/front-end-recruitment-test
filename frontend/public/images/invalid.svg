@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="31.242188mm"
+   height="31.242188mm"
+   viewBox="0 0 31.242188 31.242188"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
+   sodipodi:docname="invalid.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.7711208"
+     inkscape:cx="70.909936"
+     inkscape:cy="22.373618"
+     inkscape:window-width="1920"
+     inkscape:window-height="1012"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-20.220703,-18.058594)">
+    <path
+       id="path846"
+       style="color:#000000;fill:#000000;stroke-width:3.77953;stroke-linecap:square;stroke-linejoin:round;-inkscape-stroke:none"
+       d="M 59.041016 0 C 26.467966 0 -9.4739031e-15 26.46797 0 59.041016 C 0 91.614065 26.467966 118.08008 59.041016 118.08008 C 91.614061 118.08008 118.08008 91.614065 118.08008 59.041016 C 118.08008 26.46797 91.614061 0 59.041016 0 z M 59.041016 5.6699219 C 88.550153 5.6699219 112.41211 29.531878 112.41211 59.041016 C 112.41211 88.550157 88.550153 112.41211 59.041016 112.41211 C 29.531878 112.41211 5.6699219 88.550157 5.6699219 59.041016 C 5.6699219 29.531878 29.531878 5.6699219 59.041016 5.6699219 z M 36.703125 32.695312 L 32.695312 36.703125 L 55.033203 59.041016 L 32.695312 81.378906 L 36.703125 85.386719 L 59.041016 63.048828 L 81.378906 85.386719 L 85.386719 81.378906 L 63.048828 59.041016 L 85.386719 36.703125 L 81.378906 32.695312 L 59.041016 55.033203 L 36.703125 32.695312 z "
+       transform="matrix(0.26458333,0,0,0.26458333,20.220703,18.058594)" />
+  </g>
+</svg>
